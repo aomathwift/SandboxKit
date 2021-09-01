@@ -1,0 +1,18 @@
+# Xcode
+
+## User settings
+xcuserdata/
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+.build/
+
+# CocoaPods
+Pods/
+*.xcworkspace
+
+# Carthage
+Carthage/Checkouts
+Carthage/Build/
