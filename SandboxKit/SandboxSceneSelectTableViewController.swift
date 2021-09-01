@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-public final class SandboxSceneSelectTableViewController: UITableViewController {
+open class SandboxSceneSelectTableViewController: UITableViewController {
     private let scenes: [Scene]
     public init(@SandboxScenes _ makeScenes: () -> [Scene]) {
         self.scenes = makeScenes()
@@ -42,7 +42,7 @@ public final class SandboxSceneSelectTableViewController: UITableViewController 
         navigationController?.pushViewController(selectedScene.viewController, animated: true)
     }
 
-    public func initializeScene(_ scene: Scene) {
+    open func initializeScene(_ scene: Scene) {
 
         /// Override this method in your application and write initialization such as registering your own stub request.
     }
