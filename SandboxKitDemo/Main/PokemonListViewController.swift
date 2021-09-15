@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 final class PokemonListViewController: UITableViewController {
-    private var pokemons: [Pokemon] = []
+    private var pokemons: [PokemonListRequest.Pokemon] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         fetch()

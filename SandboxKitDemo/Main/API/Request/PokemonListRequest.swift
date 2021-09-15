@@ -13,4 +13,9 @@ struct PokemonListRequest: APIRequest {
     var method: HTTPMethod = .get
     var path: String = "/pokemons"
     var parameters: [String : Any] = [:]
+
+    struct Pokemon: Decodable {
+        var id: Int64
+        var name: String
+    }
 }

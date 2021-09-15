@@ -10,5 +10,10 @@ import Foundation
 struct Pokemon: Decodable {
     var id: Int64
     var name: String
-    var type: PokemonType
+    private var type: String
+    var pokemonType: PokemonType {
+        return .init(rawValue: type) ?? .normal
+    }
+    var height: Double
+    var weight: Double
 }

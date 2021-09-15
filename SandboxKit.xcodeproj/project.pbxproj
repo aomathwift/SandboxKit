@@ -33,6 +33,7 @@
 		2A2053D126DEF1FD00C66AA1 /* pokemon.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A2053D026DEF1FD00C66AA1 /* pokemon.json */; };
 		2A3471EF26F23CE000B8226B /* ServiceClientStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3471EE26F23CE000B8226B /* ServiceClientStub.swift */; };
 		2A3471F226F2418100B8226B /* ResponseStubbable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3471F126F2418100B8226B /* ResponseStubbable.swift */; };
+		2A3471F426F2507C00B8226B /* pokemons.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A3471F326F2507C00B8226B /* pokemons.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		2A2053D026DEF1FD00C66AA1 /* pokemon.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = pokemon.json; sourceTree = "<group>"; };
 		2A3471EE26F23CE000B8226B /* ServiceClientStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceClientStub.swift; sourceTree = "<group>"; };
 		2A3471F126F2418100B8226B /* ResponseStubbable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseStubbable.swift; sourceTree = "<group>"; };
+		2A3471F326F2507C00B8226B /* pokemons.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = pokemons.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				2A2053D026DEF1FD00C66AA1 /* pokemon.json */,
+				2A3471F326F2507C00B8226B /* pokemons.json */,
 			);
 			path = fixtures;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A2053A626DEE19D00C66AA1 /* LaunchScreen.storyboard in Resources */,
+				2A3471F426F2507C00B8226B /* pokemons.json in Resources */,
 				2A2053D126DEF1FD00C66AA1 /* pokemon.json in Resources */,
 				2A2053A326DEE19D00C66AA1 /* Assets.xcassets in Resources */,
 			);

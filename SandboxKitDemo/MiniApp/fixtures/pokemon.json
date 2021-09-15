@@ -1,5 +1,7 @@
 {
     "id": 133,
-    "name": "イーブイ"
-    "type": "normal"
+    "name": "Eevee",
+    "type": "normal",
+    "height": 0.3,
+    "weight": 6.5
 }

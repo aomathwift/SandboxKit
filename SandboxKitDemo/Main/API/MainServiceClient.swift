@@ -9,6 +9,6 @@ import Foundation
 
 final class MainServiceClient: ServiceClient {
     func sendRequest<RequestType>(_ request: RequestType, completion: @escaping (Result<RequestType.Response, Error>) -> Void) where RequestType: APIRequest {
-        // Implement URL Request
+        /// Implement your URL Request
     }
 }

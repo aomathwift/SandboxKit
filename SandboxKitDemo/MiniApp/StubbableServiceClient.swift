@@ -16,7 +16,7 @@ final class StubbableServiceClient: ServiceClient {
         /// Implement your Dummy API Request
 
         let matchingStubs = responseStubs.filter { stub in
-            return stub.path != request.path || stub.method != request.method
+            return stub.path == request.path && stub.method == request.method
         }
         let matchingStub: ServiceClientStub
         switch matchingStubs.count {

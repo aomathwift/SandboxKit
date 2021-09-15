@@ -7,9 +7,14 @@
 
 import Foundation
 
-enum PokemonType: String, Decodable {
+enum PokemonType: String {
     case normal
     case fire
     case water
     case electric
+    case psychic
+    case dark
+    case grass
+    case ice
+    case fairy
 }

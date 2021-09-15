@@ -24,6 +24,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                         JSONData(from: "pokemon")
                     }
                 }
+                Scene(
+                    name: "PokemonList",
+                    PokemonListViewController()
+                ) {
+                    Mock(path: "/pokemons", statusCode: 200, method: .get) {
+                        JSONData(from: "pokemons")
+                    }
+                }
             }
             window?.rootViewController = UINavigationController(rootViewController: viewController)
             window?.makeKeyAndVisible()
