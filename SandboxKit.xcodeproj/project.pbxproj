@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A20537126DD24DF00C66AA1 /* SandboxKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A20536726DD24DF00C66AA1 /* SandboxKit.framework */; };
-		2A20537626DD24E000C66AA1 /* SandboxKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A20537526DD24E000C66AA1 /* SandboxKitTests.swift */; };
 		2A20537826DD24E000C66AA1 /* SandboxKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A20536A26DD24DF00C66AA1 /* SandboxKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2A20538A26DEB6AF00C66AA1 /* SandboxSceneSelectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A20538926DEB6AF00C66AA1 /* SandboxSceneSelectTableViewController.swift */; };
 		2A20538E26DED7FD00C66AA1 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A20538D26DED7FD00C66AA1 /* HTTPMethod.swift */; };
@@ -36,23 +34,10 @@
 		2A3471F426F2507C00B8226B /* pokemons.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A3471F326F2507C00B8226B /* pokemons.json */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		2A20537226DD24DF00C66AA1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2A20535E26DD24DF00C66AA1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2A20536626DD24DF00C66AA1;
-			remoteInfo = SandboxKit;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		2A20536726DD24DF00C66AA1 /* SandboxKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SandboxKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A20536A26DD24DF00C66AA1 /* SandboxKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SandboxKit.h; sourceTree = "<group>"; };
 		2A20536B26DD24DF00C66AA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2A20537026DD24DF00C66AA1 /* SandboxKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SandboxKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A20537526DD24E000C66AA1 /* SandboxKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandboxKitTests.swift; sourceTree = "<group>"; };
-		2A20537726DD24E000C66AA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A20538926DEB6AF00C66AA1 /* SandboxSceneSelectTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandboxSceneSelectTableViewController.swift; sourceTree = "<group>"; };
 		2A20538D26DED7FD00C66AA1 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		2A20538F26DED90000C66AA1 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
@@ -88,14 +73,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2A20536D26DD24DF00C66AA1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2A20537126DD24DF00C66AA1 /* SandboxKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2A20539426DEE19B00C66AA1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -111,7 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				2A20536926DD24DF00C66AA1 /* SandboxKit */,
-				2A20537426DD24E000C66AA1 /* SandboxKitTests */,
 				2A20539826DEE19B00C66AA1 /* SandboxKitDemo */,
 				2A20536826DD24DF00C66AA1 /* Products */,
 				2A2053C126DEEBB400C66AA1 /* Frameworks */,
@@ -122,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				2A20536726DD24DF00C66AA1 /* SandboxKit.framework */,
-				2A20537026DD24DF00C66AA1 /* SandboxKitTests.xctest */,
 				2A20539726DEE19B00C66AA1 /* SandboxKitDemo.app */,
 			);
 			name = Products;
@@ -140,15 +115,6 @@
 				2A3471F126F2418100B8226B /* ResponseStubbable.swift */,
 			);
 			path = SandboxKit;
-			sourceTree = "<group>";
-		};
-		2A20537426DD24E000C66AA1 /* SandboxKitTests */ = {
-			isa = PBXGroup;
-			children = (
-				2A20537526DD24E000C66AA1 /* SandboxKitTests.swift */,
-				2A20537726DD24E000C66AA1 /* Info.plist */,
-			);
-			path = SandboxKitTests;
 			sourceTree = "<group>";
 		};
 		2A20539826DEE19B00C66AA1 /* SandboxKitDemo */ = {
@@ -264,24 +230,6 @@
 			productReference = 2A20536726DD24DF00C66AA1 /* SandboxKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		2A20536F26DD24DF00C66AA1 /* SandboxKitTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2A20537E26DD24E000C66AA1 /* Build configuration list for PBXNativeTarget "SandboxKitTests" */;
-			buildPhases = (
-				2A20536C26DD24DF00C66AA1 /* Sources */,
-				2A20536D26DD24DF00C66AA1 /* Frameworks */,
-				2A20536E26DD24DF00C66AA1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2A20537326DD24DF00C66AA1 /* PBXTargetDependency */,
-			);
-			name = SandboxKitTests;
-			productName = SandboxKitTests;
-			productReference = 2A20537026DD24DF00C66AA1 /* SandboxKitTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		2A20539626DEE19B00C66AA1 /* SandboxKitDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A2053A826DEE19D00C66AA1 /* Build configuration list for PBXNativeTarget "SandboxKitDemo" */;
@@ -312,9 +260,6 @@
 						CreatedOnToolsVersion = 12.5;
 						LastSwiftMigration = 1250;
 					};
-					2A20536F26DD24DF00C66AA1 = {
-						CreatedOnToolsVersion = 12.5;
-					};
 					2A20539626DEE19B00C66AA1 = {
 						CreatedOnToolsVersion = 12.5;
 					};
@@ -334,7 +279,6 @@
 			projectRoot = "";
 			targets = (
 				2A20536626DD24DF00C66AA1 /* SandboxKit */,
-				2A20536F26DD24DF00C66AA1 /* SandboxKitTests */,
 				2A20539626DEE19B00C66AA1 /* SandboxKitDemo */,
 			);
 		};
@@ -342,13 +286,6 @@
 
 /* Begin PBXResourcesBuildPhase section */
 		2A20536526DD24DF00C66AA1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2A20536E26DD24DF00C66AA1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -381,14 +318,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2A20536C26DD24DF00C66AA1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2A20537626DD24E000C66AA1 /* SandboxKitTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2A20539326DEE19B00C66AA1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -411,14 +340,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		2A20537326DD24DF00C66AA1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2A20536626DD24DF00C66AA1 /* SandboxKit */;
-			targetProxy = 2A20537226DD24DF00C66AA1 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2A2053A426DEE19D00C66AA1 /* LaunchScreen.storyboard */ = {
@@ -605,44 +526,6 @@
 			};
 			name = Release;
 		};
-		2A20537F26DD24E000C66AA1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7Q6B2W96J9;
-				INFOPLIST_FILE = SandboxKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.aoi-okawa.SandboxKitTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		2A20538026DD24E000C66AA1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7Q6B2W96J9;
-				INFOPLIST_FILE = SandboxKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.aoi-okawa.SandboxKitTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		2A2053A926DEE19D00C66AA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -698,15 +581,6 @@
 			buildConfigurations = (
 				2A20537C26DD24E000C66AA1 /* Debug */,
 				2A20537D26DD24E000C66AA1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2A20537E26DD24E000C66AA1 /* Build configuration list for PBXNativeTarget "SandboxKitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2A20537F26DD24E000C66AA1 /* Debug */,
-				2A20538026DD24E000C66AA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
