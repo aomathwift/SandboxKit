@@ -13,4 +13,12 @@ protocol APIRequest {
     var method: HTTPMethod { get }
     var path: String { get }
     var parameters: [String: Any] { get }
+    func makeResponse(from data: Data, urlResponse: HTTPURLResponse) throws -> Response
+}
+
+extension APIRequest where Response: Decodable {
+    func makeResponse(from data: Data, urlResponse: HTTPURLResponse) throws -> Response {
+        let decoder = JSONDecoder()
+        return try decoder.decode(Response.self, from: data)
+    }
 }

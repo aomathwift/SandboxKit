@@ -8,6 +8,7 @@
 import Foundation
 import SandboxKit
 
+#if DEBUG
 final class MiniAppMainViewController: SandboxSceneSelectTableViewController {
     override init(@SandboxScenes _ makeScenes: () -> [Scene]) {
         super.init(makeScenes)
@@ -21,9 +22,15 @@ final class MiniAppMainViewController: SandboxSceneSelectTableViewController {
         let stubbableServiceClient = StubbableServiceClient()
         for mock in scene.stubData {
             if let jsonData = mock.json.data {
-                stubbableServiceClient.registerClientResponse(jsonData, for: mock.path, method: mock.method, statusCode: mock.statusCode)
+                stubbableServiceClient.registerClientResponse(
+                    jsonData,
+                    for: mock.path,
+                    method: mock.method,
+                    statusCode: mock.statusCode
+                )
             }
         }
         ServiceClientProvider.injectionContainer.serviceClient = stubbableServiceClient
     }
 }
+#endif

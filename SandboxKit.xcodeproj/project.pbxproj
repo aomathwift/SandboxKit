@@ -31,6 +31,8 @@
 		2A2053CD26DEEDC100C66AA1 /* PokemonListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2053CC26DEEDC100C66AA1 /* PokemonListRequest.swift */; };
 		2A2053CF26DEEE6900C66AA1 /* PokemonRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2053CE26DEEE6900C66AA1 /* PokemonRequest.swift */; };
 		2A2053D126DEF1FD00C66AA1 /* pokemon.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A2053D026DEF1FD00C66AA1 /* pokemon.json */; };
+		2A3471EF26F23CE000B8226B /* ServiceClientStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3471EE26F23CE000B8226B /* ServiceClientStub.swift */; };
+		2A3471F226F2418100B8226B /* ResponseStubbable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3471F126F2418100B8226B /* ResponseStubbable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,8 @@
 		2A2053CC26DEEDC100C66AA1 /* PokemonListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListRequest.swift; sourceTree = "<group>"; };
 		2A2053CE26DEEE6900C66AA1 /* PokemonRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonRequest.swift; sourceTree = "<group>"; };
 		2A2053D026DEF1FD00C66AA1 /* pokemon.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = pokemon.json; sourceTree = "<group>"; };
+		2A3471EE26F23CE000B8226B /* ServiceClientStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceClientStub.swift; sourceTree = "<group>"; };
+		2A3471F126F2418100B8226B /* ResponseStubbable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseStubbable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +135,7 @@
 				2A20538D26DED7FD00C66AA1 /* HTTPMethod.swift */,
 				2A20538F26DED90000C66AA1 /* Scene.swift */,
 				2A20539126DED92900C66AA1 /* Mock.swift */,
+				2A3471F126F2418100B8226B /* ResponseStubbable.swift */,
 			);
 			path = SandboxKit;
 			sourceTree = "<group>";
@@ -180,9 +185,10 @@
 		2A2053BB26DEEAE000C66AA1 /* MiniApp */ = {
 			isa = PBXGroup;
 			children = (
+				2A3471F026F23DCD00B8226B /* fixtures */,
 				2A2053C726DEEC5B00C66AA1 /* StubbableServiceClient.swift */,
 				2A2053C926DEEC8B00C66AA1 /* MiniAppMainViewController.swift */,
-				2A2053D026DEF1FD00C66AA1 /* pokemon.json */,
+				2A3471EE26F23CE000B8226B /* ServiceClientStub.swift */,
 			);
 			path = MiniApp;
 			sourceTree = "<group>";
@@ -213,6 +219,14 @@
 				2A2053CE26DEEE6900C66AA1 /* PokemonRequest.swift */,
 			);
 			path = Request;
+			sourceTree = "<group>";
+		};
+		2A3471F026F23DCD00B8226B /* fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				2A2053D026DEF1FD00C66AA1 /* pokemon.json */,
+			);
+			path = fixtures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,6 +372,7 @@
 				2A20538E26DED7FD00C66AA1 /* HTTPMethod.swift in Sources */,
 				2A20538A26DEB6AF00C66AA1 /* SandboxSceneSelectTableViewController.swift in Sources */,
 				2A20539026DED90000C66AA1 /* Scene.swift in Sources */,
+				2A3471F226F2418100B8226B /* ResponseStubbable.swift in Sources */,
 				2A20539226DED92900C66AA1 /* Mock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,6 +398,7 @@
 				2A2053CD26DEEDC100C66AA1 /* PokemonListRequest.swift in Sources */,
 				2A2053BA26DEE9C200C66AA1 /* PokemonDetailViewController.swift in Sources */,
 				2A2053B226DEE7B600C66AA1 /* Pokemon.swift in Sources */,
+				2A3471EF26F23CE000B8226B /* ServiceClientStub.swift in Sources */,
 				2A2053BE26DEEB2600C66AA1 /* ServiceClient.swift in Sources */,
 				2A2053C626DEEC2300C66AA1 /* MainServiceClient.swift in Sources */,
 				2A2053B426DEE7F000C66AA1 /* PokemonType.swift in Sources */,
